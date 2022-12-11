@@ -1,5 +1,11 @@
+// BASE
+
 @import "./base/variables";
 @import "./base/base";
 
 // UTILS
 @import "./utils/visually-hidden";
+
+// COMPONENTS
+
+@import "./components/button";
