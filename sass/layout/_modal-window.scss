@@ -10,7 +10,7 @@
     transition-property: opacity, visibility;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
-    z-index: 1;
+    z-index: 99;
   }
   
   .backdrop.is-hidden {
