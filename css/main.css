@@ -123,9 +123,7 @@ img {
   background-color: var(--btn-order-bg-color);
   color: var(--title-text-color);
 }
-
-.section-order__button:hover,
-.section-order__button:focus {
+.section-order__button:hover, .section-order__button:focus {
   background-color: var(--btn-order-hover-bg-color);
   -webkit-transition-property: background-color, -webkit-box-shadow;
   transition-property: background-color, -webkit-box-shadow;
@@ -171,9 +169,7 @@ img {
   background-color: var(--btn-order-bg-color);
   color: var(--title-text-color);
 }
-
-.modal-window__button:hover,
-.modal-window__button:focus {
+.modal-window__button:hover, .modal-window__button:focus {
   background-color: var(--btn-order-hover-bg-color);
   -webkit-transition-property: background-color, -webkit-box-shadow;
   transition-property: background-color, -webkit-box-shadow;
@@ -210,9 +206,7 @@ img {
   background-color: var(--btn-order-bg-color);
   color: var(--title-text-color);
 }
-
-.subscribe__button:hover,
-.subscribe__button:focus {
+.subscribe__button:hover, .subscribe__button:focus {
   background-color: var(--btn-order-hover-bg-color);
   -webkit-transition-property: background-color, -webkit-box-shadow;
   transition-property: background-color, -webkit-box-shadow;
@@ -239,7 +233,7 @@ img {
 }
 
 /* <Portfolio> */
-.applications__button {
+.portfolio-applications__button {
   display: inline-block;
   padding: 6px 22px;
   font-family: inherit;
@@ -250,9 +244,7 @@ img {
   border: none;
   background-color: var(--btn-bg-color);
 }
-
-.applications__button:hover,
-.applications__button:focus {
+.portfolio-applications__button:hover, .portfolio-applications__button:focus {
   background-color: var(--btn-hover-bg-color);
   color: var(--title-text-color);
   -webkit-box-shadow: var(--box-shadow-applications);
