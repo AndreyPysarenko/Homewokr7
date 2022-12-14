@@ -11,14 +11,14 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
     z-index: 99;
+
+    &.is-hidden {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
   }
-  
-  .backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
-  
+   
   .modal-window {
     position: absolute;
     padding-top: 40px;
@@ -40,7 +40,7 @@
     border-radius: 4px;
   }
   
-  .modal-window .close-sing {
+  .close-sing {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -58,16 +58,16 @@
   
   .close-sing__icon { 
     fill: #000000;
-  }
-  
-  .close-sing__icon:hover,
-  .close-sing__icon:focus {
+
+    &:hover,
+  &:focus {
     fill: var(--accent-text-color);
       transition-property: fill;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
   }
-  
+  }
+      
   .modal-title { 
     margin-bottom: 12px;
     font-family: inherit;
@@ -90,16 +90,7 @@
     letter-spacing: 0.01em;
     color: var(--secondarytext-color);
   }
-  
-  .modal-form__input--wrapper {
-    position: relative;
-    margin-bottom: 10px;
-  }
-  
-  .modal-form__input--wrapper input {
-    margin-bottom: 0;
-  }
-  
+    
   .modal-form__input {
     width: 100%;
     height: 40px;  
@@ -110,13 +101,22 @@
     padding: 10px;
     padding-left: 42px;
     color: var(--secondarytext-color);
+
+    &--wrapper {
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    &--wrapper input {
+      margin-bottom: 0;
+    }
+
+    &:focus {
+      outline: 0;
+      border-color: var(--accent-icon-color);
+    }
   }
-  
-  .modal-form__input:focus {
-    outline: 0;
-    border-color: var(--accent-icon-color);
-  }
-  
+    
   .modal-form__icon {
     position: absolute;
     left: 15px;
@@ -137,27 +137,36 @@
     border-radius: 4px;
     resize: none;  
     color: var(--secondarytext-color);
-  }
-  
-  .modal-form__textarea:focus {
-    outline: 0;
-    border-color: var(--accent-icon-color);
-  }
-  
-  .modal-form__textarea::placeholder {
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-  }
-  
+
+    &:focus {
+      outline: 0;
+      border-color: var(--accent-icon-color);
+    }
+
+    &::placeholder {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+  } 
+   
   .check-line { 
     margin-top: 20px;
     margin-bottom: 30px;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    
+    & input:checked + .checkbox-agree .checkbox-agree__icon {
+      fill: var(--secondary-icon-color);
+
+      &--wrapper {
+        background-color: var(--accent-icon-color);
+        border: none;
+      }
+    }
   }
   
   .checkbox-agree {
@@ -171,35 +180,28 @@
   letter-spacing: 0.03em;
   
   color: var(--secondarytext-color);
-  }
-  
-  .checkbox-agree__icon--wrapper {
-    width: 16px;
-    height: 15px;
-    border: 2px solid #212121;
-    border-radius: 2px;
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-  
-  .checkbox-agree__icon {
+
+  &__icon {
     fill: transparent;
+
+    &--wrapper {
+      width: 16px;
+      height: 15px;
+      border: 2px solid #212121;
+      border-radius: 2px;
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
   }
-  
-  .check-line input:checked + .checkbox-agree .checkbox-agree__icon--wrapper {
-    background-color: var(--accent-icon-color);
-    border: none;
-  }
-  
-  .check-line input:checked + .checkbox-agree .checkbox-agree__icon {
-    fill: var(--secondary-icon-color);
-  }
-  
-  .checkbox-agree__link {
+
+  &__link {
     margin-left: 5px;
     
     text-decoration: underline;
     color: var(--accent-text-color);
   }
+  }  
+  
+  
