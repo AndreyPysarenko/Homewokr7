@@ -41,7 +41,7 @@
   
   .clients-icons__link:hover,
   .clients-icons__link:focus {
-    color: var(--accent-icon-color);
+    color: $accent-icon-color;
     transition-property: color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);

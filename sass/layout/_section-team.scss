@@ -1,5 +1,5 @@
 .section-team {
-    background-color: var(--teams-bg-color); 
+    background-color: $teams-bg-color; 
   }
   
   .section-team__lable {
@@ -20,7 +20,7 @@
   .team-list__members {
       flex-basis: calc((100% - 90px) / 4); 
       text-align: center;
-      background-color: var(--primary-bg-color);
+      background-color: $primary-bg-color;
     box-shadow: var(--box-shadow-teams);
   border-radius: 0px 0px 4px 4px;
   }
@@ -41,7 +41,7 @@
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
-    color: var(--secondarytext-color);
+    color: $secondary-text-color;
   }
   
   .social-icons {
@@ -71,8 +71,8 @@
   
   .social-icons__link:hover,
   .social-icons__link:focus {
-    color: var(--secondary-icon-color);
-      background-color: var(--accent-icon-color);
+    color: $secondary-icon-color;
+      background-color: $accent-icon-color;
       transition-property: color, background-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);

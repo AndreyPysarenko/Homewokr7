@@ -1,5 +1,5 @@
 .page-footer {
-    background-color: var(--accent-bg-color);
+    background-color: $accent-bg-color;
     padding: 60px 0;
   }
   
@@ -19,10 +19,10 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--accent-text-color);
+    color: $accent-text-color;
   }
   .page-footer__logo--color {
-    color: var(--title-text-color);
+    color: $title-text-color;
   }
   
   .adress__list {
@@ -40,36 +40,36 @@
   }
   
   .adress__link {
-    color: var(--title-text-color);
+    color: $title-text-color;
   }
   
   .adress__link:hover,
   .adress__link:focus {
-    color: var(--accent-text-color);
+    color: $accent-text-color;
     transition-property: color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
   }
   
   .adress__mail {
-    color: var(--adress-text-color);
+    color: $adress-text-color;
   }
   
   .adress__mail:hover,
   .adress__mail:focus {
-    color: var(--accent-text-color);
+    color: $accent-text-color;
     transition-property: color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
   }
   
   .adress__tell {
-    color: var(--adress-text-color);
+    color: $adress-text-color;
   }
   
   .adress__tell:hover,
   .adress__tell:focus {
-    color: var(--accent-text-color);
+    color: $accent-text-color;
     transition-property: color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -81,7 +81,7 @@
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: $title-text-color;
   }
   
   .card-icons {
@@ -106,13 +106,13 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: var(--title-text-color);
+    color: $title-text-color;
     background-color: rgba(255, 255, 255, 0.1);
   }
   
   .card-icons__link:hover,
   .card-icons__link:focus {
-      background-color: var(--accent-icon-color);
+      background-color: $accent-icon-color;
       transition-property: background-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -134,7 +134,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     
-    color: var(--title-text-color);
+    color: $title-text-color;
   }
   
   .form-footer {
@@ -156,7 +156,7 @@
   border-radius: 4px;
     margin: 0;
     padding: 16px;
-    color: var(--secondarytext-color);
+    color: $secondary-text-color;
     background-color: transparent;
     
   }
