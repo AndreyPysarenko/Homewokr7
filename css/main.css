@@ -309,7 +309,6 @@ img {
   border-radius: 50%;
   background-color: #ffffff;
 }
-
 .close-sing__icon {
   fill: #000000;
 }
@@ -1161,7 +1160,7 @@ img {
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
 }
-.card-set__item:hover .item-description {
+.card-set__item:hover .item-description, .card-set__item:focus .item-description {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }

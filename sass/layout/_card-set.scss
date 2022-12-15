@@ -51,7 +51,7 @@
   color: $title-text-color;
   background-color: rgba(33, 150, 243, 0.9);
 
-  .card-set__item:hover & {
+  .card-set__item:hover & , .card-set__item:focus & {
     transform: translateY(0);
   }
 }
